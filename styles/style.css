@@ -1,0 +1,93 @@
+@charset 'utf-8';
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.game{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 600px;
+    margin: 100px auto;
+    background: rgba(20,189,172,1);
+}
+.players{
+    height: 60px;
+    align-items: center;
+    display: flex;
+    background-color: rgba(248,248,248,1);
+    justify-content: space-around;
+}
+.player{
+    width: 30%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 1px 1px rgba(100,100,100,1);
+    transition: all .3s;
+}
+.player:active{
+    box-shadow: 0 1px 5px rgba(100,100,100,1);
+}
+.note{
+    height: 30px;
+    background-color: rgba(248,248,248,1);
+}
+.note h4{
+    text-align: center;
+    color: #233;
+}
+.parent{
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 200px;
+    height: 200px;
+}
+.child{
+    width: 31%;
+    height: 31%;
+    color: rgba(0,0,0,0);
+    background: rgba(240,240,240,1);
+    box-shadow: 0 2px 4px rgba(0,0,0,1);
+    transition: all .3s;
+}
+.child:active{
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,1);
+}
+.red{
+    background-color: tomato;
+    box-shadow:none;
+}
+.gold{
+    background-color: gold;
+    box-shadow:none;
+}
+.win{
+    border-radius: 50%;
+    transform: scale(.6);
+    background: whitesmoke;
+}
+.init{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #14BDAC;
+    background-color: rgba(248,248,248,1);
+    box-shadow: 0 1px 1px rgba(100,100,100,1);
+    transition: all 1s;
+}
+.init:hover{
+    cursor: pointer;
+}
+.init:active{
+    box-shadow: 0 1px 10px rgba(100,100,100,1);
+}
